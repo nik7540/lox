@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="ulf-8">
+		<meta name="keywords"content="вёрстка, HTML, CSS, обучение">
+		<meta name="description"content="Мой первый сайт">
+		<link rel="stylesheet" href="style.css">
+		<title> Сайт ученика группы Бас-23.161 Адова Н.А.
+		</title>
+	</head>
+	<body>
+		<header>
+			<h1> Сайт ученика группы Бас-23.161 Адова Н.А. 
+			</h1>
+			
+			<nav> 
+				<a href="https://natk.ru/">НАТК
+				</a>
+				<a downoload = "form.html"> Анкета
+				</a>
+				<a href ="https://natk.ru/" target="_blank" ><img src="button.png" />
+				</a>
+			</nav>
+		</header>
+		
+		<main>
+			<section>
+				<h1>О себе </h1>
+				
+				<p> Всем привет! Добро пожаловать на мой
+					первый сайт. Здесь мы запишем текст параграфа, о том как же невероятно интересно
+					изучать основы веба </p>
+			</section>
+			
+			<section>
+				<h2> Мои навыки </h2>
+				<dl class="skills">
+					<div class = "skills-level" class = "skill-level-ok" style = "width: 60%;"><dt>HTML</dt></div>
+					<div class = "skills-level"><dd>60%</dd></div>
+					<div class = "skills-level" style = "width: 20%;"><dt>CSS</dt></div>
+					<div class = "skills-level"><dd>20%</dd></div>
+					<div class = "skills-level" style = "width: 10%;"><dt>JS</dt></div>
+					<div class = "skills-level"><dd>10%</dd></div>
+				</dl>
+					
+			
+			</section>
+		</main>
+		
+		<footer> 
+			<p> ♣Адов Н.А.♣</p>
+			
+		</footer>
+	</body>
+</html>
+
+
+h1, h2, ol{
+	border: 2em dashed black	
+}
+nav, h2{
+	border: 1px double green
+}
+.page-footer{
+	padding: 20px;
+	background: green;
+}
+body{
+	color: white;
+	font-size: 16px;
+	line-height: 26px;
+}
+.main{
+	border: 5px solid #2d508f; 
+}
+body{
+	background: #ffffff url("bg.png") no-repeat top center;
+}
+.skills dd{
+	background-color: #e8e8e8;
+	margin: 0;
+	margin-bottom: 10px;
+}
+.skills-level{
+	font-size: 12px;
+	text-align: center;
+	color: #ffffff;
+	background-color: #4470c4;
+}
+.skills-level{
+	background-color: #47bb52;
+}
+
+
+
+
+
+
+исп
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="main-style.css">
+  <title>Здесь будет интернет магазин «Китайский БИТ»</title>
+</head>
+<body>
+<div class="container">
+<header class="page-header">
+  <h1 class="title">Здесь будет интернет магазин <br></<span class="accent">«Китайский БИТ»</span><h1>
+  <div class="logo">
+    <img src="logo.png" width = "150"/>
+  </div>
+</header>
+<main class="page-main">
+  <ol class="products-list">
+    <li class="product product-1">
+      <h2>Камера</h2>
+      <p>Описание товара в будущем</p>
+    </li>
+    <li class="product product-2">
+      <h2>Ноутбук</h2>
+      <p>Описание товара в будущем</p>
+    </li>
+    <li class="product product-3">
+      <h2>МФУ</h2>
+      <p>Описание товара в будущем</p>
+    </li>
+    <li class="product product-4">
+      <h2>Принтер</h2>
+      <p>Описание товара в будущем</p>
+    </li>
+  </ol>
+</main>
+<footer class="page-footer">
+  © 2020 — что есть, тем и торгуем
+</footer>
+</div>
+
+</body>
+</html>
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Iso&display=swap');
+
+* {
+	font-family: 'Montserrat', sans-serif;
+}
+
+h1 span{
+	font-family: 'Rubik Iso', cursive;
+
+}
+
+body {
+	background-color: #000;
+}
+.container{
+	width:768px;
+	margin: 0 auto;
+}
+.page-header,
+.page-footer{
+	background: #8aea92;
+	color: #33202a;
+}
+
+.product{
+	position:relative;
+	padding: 20px;
+	min-height: 120px;
+	background-color:#fff;
+	border-radius: 15px;
+	list-style: none;
+}
+
+.products-list{
+	padding: 10px 20px;
+	display:grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	column-gap: 10px;
+}
+.product > h2{
+	color: #80ada0;
+}
